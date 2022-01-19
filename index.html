@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Exser Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <!-- INCLUYE EL ARCHIVO SWEETALERT(ALERTA) Y LOS ESTILOS -->
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/sweet/sweetalert2.css">
+  <script src="src/sweet/sweetalert2.min.js"></script>
+
+</head>
+
+<body class="bitch"> 
+  <main>
+    <div class="miform">
+    <div class="container text-center">
+      <h1 class="xd py-4 text-info">
+        <i class="fas fa-plug"></i> Exser Company
+      </h1>
+        <form action="#" target="" method="get" name="formDatosPersonales">
+          <div>
+            <h3 style="color: rgb(192, 64, 224, 0.60);">Correlativo ID</h1>
+            <input type="text" id="correlativoID" class="indenty" autocomplete="off" readonly placeholder="ID" />
+          </div>
+          
+          <div class="caja">
+            <select id="expor" name= "expor" class="s">
+              <option>EXPORTADORA AGROFRUTA LIM</option>
+              <option value="EXPORTADORA ANTU SPA">EXPORTADORA ANTU SPA</option>
+              <option value="EXPORTADORA BAIKA S.A">EXPORTADORA BAIKA S.A</option>
+              <option value="EXPORTADORA BYCIFRUT SPA">EXPORTADORA BYCIFRUT SPA</option>
+              <option value="EXPORTADORA AGRICOLA S.A.">EXPORTADORA AGRICOLA S.A.</option>
+              <option value="EXPORTADORA CAMPOS SUDAMERICANOS">EXPORTADORA CAMPOS SUDAMERICANOS</option>
+              <option value="EXSER. LTDA.">EXSER. LTDA.</option>
+              <option value="EXPORTADORA FRUTAMERICA S">EXPORTADORA FRUTAMERICA S</option>
+              <option value="EXPORTADORA GB">EXPORTADORA GB</option>
+              <option value="GERARDO PEREZ">GERARDO PEREZ</option>
+              <option value="COMMY EXP DE FRUTAS OESTE">COMMY EXP DE FRUTAS OESTE</option>
+              <option value="SOCIEDAD COMERCIAL Y AGRI">SOCIEDAD COMERCIAL Y AGRI</option>
+              <option value="SOC. COMERCIAL PROCINCO LI">SOC. COMERCIAL PROCINCO LI</option>
+              <option value="SAN FELIPE FRUTAS LIMITADA">SAN FELIPE FRUTAS LIMITADA</option>
+              <option value="EXPORTADOR QUINTAY S.A">EXPORTADOR QUINTAY S.A</option>
+            </select>
+          </div>
+          <input type="text" id="codProduc" class="s" autocomplete="off" placeholder="Cod. Productor" />
+          
+  
+          <input type="date" name="fecha" id="fechaRec" />
+          
+          <label for="Estado" style="color: white;">Estado:</label>
+          <select id="state" class="selec" autocomplete="off">
+            <option value="Sin Frio">Sin frio</option>
+            <option value="Frio">Frio</option>
+          </select>
+          <input type="text" id="numGuia" class="s" autocomplete="off" placeholder="Numero de guia" />
+  
+          <input type="text" id="choferID" class="s" autocomplete="off" placeholder="Chofer" />
+          <input type="time" name="hora" id="horaRec"/>
+          <input type="text" id="folio" class="s" autocomplete="off" placeholder="Folio" />
+          <input type="text" id="especie" class="s" autocomplete="off" placeholder="Especie" />
+          <input type="text" id="variedad" class="s" autocomplete="off" placeholder="Variedad" />
+          <input type="text" id="packing" class="s" autocomplete="off" placeholder="Packing" />
+          <input type="text" id="etiqueta" class="s" autocomplete="off" placeholder="Etiqueta" />
+          <input type="text" id="calibre" class="s" autocomplete="off" placeholder="Calibre" />
+          <input type="text" id="altura" class="s" autocomplete="off" placeholder="Altura" />
+          <input type="text" id="codMix" class="s" autocomplete="off" placeholder="Pallets Mixtos" />
+          <input type="text" id="numCajas" class="s" autocomplete="off" placeholder="Nº Cajas" />
+          
+          <input type="text" id="jaja" class="s" autocomplete="off" placeholder="Nº Cajas" />
+  
+          <textarea id="obsRegis"  placeholder="Observacion: Insertar cantidad de cajas, pallets, puchos, parrillas, y esquineros
+          Ejemplo: CJS 374 / PALL 4 / PUC 4 / PAR 4 / ESQ 16" maxlength="300"></textarea>
+          
+        </form>
+      </div>
+     
+
+    </div>
+      <div class="d-flex justify-content-center">
+        <button class="btnSave" id="btn-create">Crear</button>
+        <button class="btnWrite" id="btn-read">Leer datos</button>
+        <button class="btnUpdate" id="btn-update">Actualizar datos</button>
+        <button class="btnDelete" id="btn-delete">Eliminar todas las recepciones</button>
+      </div>
+
+      <table class="tablee" style="width: 100%;">
+        <tr>
+          <th class="op" scope="col">ID</th>
+          <th class="op" scope="col">Cod. Produc.</th>
+          <th class="op" scope="col">Exportadora</th>
+          <th class="op" scope="col">Fecha-rec</th>
+          <th class="op" scope="col">Estado</th>
+          <th class="op" scope="col">Num-Guia</th>
+          <th class="op" scope="col">Chofer</th>
+          <th class="op" scope="col">Hora-Rec</th>
+          <th class="op" scope="col">Folio</th>
+          <th class="op" scope="col">Especie</th>
+          <th class="op" scope="col">Variedad</th>
+          <th class="op" scope="col">Packing</th>
+          <th class="op" scope="col">Etiqueta</th>
+          <th class="op" scope="col">Calibre</th>
+          <th class="op" scope="col">Altura</th>
+          <th class="op" scope="col">Cod Mix</th>
+          <th class="op" scope="col">Nº Cajas</th>
+          <th class="op" scope="col">Observacion</th>
+          <th class="op" scope="col">Actualizar</th>
+          <th class="op" scope="col">Eliminar</th>
+        </tr>
+
+        <tbody id="tbody">
+          <!--
+                      <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+
+                      </tr>
+                      <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                      </tr>
+                      -->
+        </tbody>
+      </table>
+
+      <div id="notfound"></div>
+    </div>
+  </div>
+  </main>
+
+  <!-- Labels -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Include Dexie -->
+  <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+
+  <!-- Custom main file-->
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

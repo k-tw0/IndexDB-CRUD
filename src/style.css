@@ -1,0 +1,285 @@
+body {
+    box-sizing: border-box;
+    text-decoration-color: seashell;
+}
+
+.bitch{
+    min-height: 100vh;
+    background: linear-gradient(rgba(5, 7,
+    12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(./img/zyro-image.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.xd{
+    background: rgba(5, 7, 12, 0.40);
+    border:1px solid ;
+    border-radius:10px;
+}
+
+.indenty {
+    width: 100%;
+    color: seashell;
+}
+
+.d-flex iselec {
+    margin: .9em 0em;
+}
+
+.d-flex button {
+    margin: 1.5em .6em;
+    padding: .3em 2.4em;
+}
+
+.d-flex table {
+    margin: 1em 10em;
+}
+
+table .btnedit {
+    color: lightgreen;
+    cursor: pointer;
+}
+
+table .btndelete {
+    color: tomato;
+    cursor: pointer;
+}
+
+@keyframes slideup {
+    50% {
+        top: 0
+    }
+
+    100% {
+        top: -40px;
+    }
+}
+
+*{box-sizing:border-box;}
+
+form{
+	width:90%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:rgb(126, 126, 126);
+    background: rgba(5, 7, 12, 0.40);
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+input.s[type="text"]{
+    background: rgba(5, 7, 12, 0.30);
+    color: seashell;
+}
+option:checked{
+    background: rgba(5, 7, 12, 0.30);
+}
+select{
+    background: rgba(5, 7, 12, 0.30);
+    color: seashell;
+}
+
+.caja {
+    margin:20px auto 40px auto;	
+    border:1px solid #d9d9d9;
+    height:30px;
+    overflow: hidden;
+    width: 230px;
+    position:relative;
+ }
+ select:focus{ outline: none;}
+ 
+ .caja::after{
+     content:"\025be";
+     display:table-cell;
+     padding-top:7px;
+     text-align:center;
+     width:30px;
+     height:30px;
+     background-color:#d9d9d9;
+     position:absolute;
+     top:0;
+     right:0px;	
+     pointer-events: none;
+ }
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+
+.button {
+    
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.btnSave {
+    background-color: #4CAF50; /* Green */
+    background: rgba(5, 7, 12, 0.40);
+    border-radius:10px;
+    border:1px solid #05fa3a;
+    color: white; 
+}
+
+.btnSave:hover {
+    background: rgba(55, 235, 10, 0.40);
+}
+.btnWrite {
+    background: rgba(5, 7, 12, 0.40);
+    border-radius:10px;
+    border:1px solid #ffffff;
+    color: white; 
+}
+
+.btnWrite:hover {
+    background: rgba(255, 255, 255, .50);
+    color: black;
+}
+
+.btnUpdate {
+    background: rgba(5, 7, 12, 0.40);
+    border-radius:10px;
+    border:1px solid #008CBA;
+    color: white; 
+}
+
+.btnUpdate:hover {
+    background: rgba(0, 125, 197, 0.40);
+    color: white;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.btnDelete {
+    background: rgba(5, 7, 12, 0.40);
+    border-radius:10px;
+    border:1px solid #f44336;
+    color: white; 
+}
+
+.btnDelete:hover {
+    background: rgba(250, 0, 0, 0.40);
+    color: white;
+}
+
+input[type=text]:focus {
+    background-color: rgb(173, 216, 230, 0.60);
+}
+
+input.indenty[type=text] {
+    width: 30%;
+    padding: 3px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(170, 211, 23, 0.50);
+}
+
+input.cod-prodc[type=text]{
+    width: 30%;
+    padding: 3px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+table.tablee, th.op, td {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+th, td{
+    padding: 10px;
+}
+th{
+    text-align: center;
+}
+
+input[type=date]{
+    background: rgba(5, 7, 12, 0.30);
+    color: seashell;
+    border:1px solid #f6f6f6;
+	border-radius:3px;
+}
+
+
+input[type=time]{
+    background: rgba(5, 7, 12, 0.30);
+    color: seashell;
+    border:1px solid #f6f6f6;
+	border-radius:3px;
+}
+
+textarea{
+    background: rgba(5, 7, 12, 0.30);
+    color: seashell;
+    border:1px solid #f6f6f6;
+	border-radius:3px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .btnWrite{
+        position: relative;
+        left: 500px;
+    }
+    .btnSave{
+        position: relative;
+        left: 500px;
+    }
+    .btnUpdate{
+        position: relative;
+        left: 500px;
+    }
+    .btnDelete{
+        position: relative;
+        left: 500px;
+    }
+    .miform{
+        left: 500px;
+        position: relative;
+        width: 100%;
+    }
+    textarea{
+        background: rgba(5, 7, 12, 0.30);
+        color: seashell;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+    }
+    
+}
