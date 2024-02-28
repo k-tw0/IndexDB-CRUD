@@ -1,4 +1,5 @@
-APP WEB LOCAL CON INDEXDB para registrar items. 
+APP WEB LOCAL CON INDEXDB para registrar items.
+
 -Boostrap
 -font google
 -firebase
